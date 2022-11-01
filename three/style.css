@@ -7,59 +7,38 @@ html {
     background-color: #6e71c4;
     color: white;
 }
-a {
-	text-decoration: none;
-	transition: 0.3s ease-in-out;
-	color: white;
+#header {
+	font-size: 24px;
 }
-a:hover {
-	color: rgb(54, 54, 54);
-}
-
-#header,#hyperlinks {
-	margin-bottom: 20px;
-	padding: 30px;
+.logo {
+	float: left;
+	padding-right: 15px;
+    padding-top: 40px;
+.site_title {
+	padding-top: 90px;
 }
 #navigation {
 	padding: 15px;
 	background-color: #a45c9c;
 	margin-bottom: 20px;
 }
+#navigation ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 22px;
+}
+#header,#hyperlinks {
+	margin-bottom: 20px;
+	padding: 30px;
+}
 #footer {
 	background-color: #3192ac;
 	padding: 0px;
 	margin-top: 40px;
 	font-size: 12px;
-}
-#header {
-	font-size: 24px;
-}
-#parag {
-	font-size: 26px;
-	color: white;
-	margin: 15px;
-}
-.container {
-	max-width: 960px;
-	margin: 0 auto;
-	overflow: hidden;
-}
-.logo {
-	float: left;
-	padding-right: 15px;
-    padding-top: 40px;
-}
-.site_title {
-	padding-top: 90px;
-}
-#navigation {
-	text-align: center;
-}
-#navigation ul {
-	list-style: none;
-	display: flex;
-	justify-content: space-between;
-	font-size: 22px;
 }
 table {
 	text-align: center;
@@ -71,57 +50,44 @@ td, th {
 	padding: 3px;
 	font-size: 18px;
 }
-
 tr:nth-child(odd) {
 	background-color: #3c90af;
 }
-
 tr:nth-child(even) {
 	background-color: #b2a0c5;
 }
-.container 
-{
-	max-width: 960px;
-	margin: 0 auto;
-	overflow: hidden;
-}
-
-a 
-{
+a {
 	text-decoration: none;
 	transition: 0.3s ease-in-out;
 	color: white;
 }
-
-a:hover 
-{
-	text-decoration: underline;
+a:hover {
+	color: rgb(54, 54, 54);
 }
-
+.container {
+	max-width: 960px;11111111111
+	margin: 0 auto;
+	overflow: hidden;
+}
 .tabl 
 {
 	display: flex;
 	flex-direction: column;
 }
-
-.form1
-{
+.fform {
 	flex: 1;
 	order: 0;
 }
-
 .contF 
 {
 	display: flex;
 	flex-direction: column;
 }
-
 .s 
 {
 	flex: 1;
 	order: 4;
 }
-
 .t 
 {
 	flex: 1;
@@ -133,7 +99,6 @@ a:hover
 	flex: 1;
 	order: 5;
 }
-
 @media screen and (min-width: 1200px) {
 
 	.container {max-width: 960px;}
