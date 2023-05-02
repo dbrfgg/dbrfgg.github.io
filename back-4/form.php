@@ -1,34 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@dbrfgg 
-Di-Liks
-/
-di-liks.github.io
-Public
-Fork your own copy of Di-Liks/di-liks.github.io
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-Beta Try the new code view
-di-liks.github.io/backend/4/form.php /
-@Di-Liks
-Di-Liks Update form.php
-Latest commit 72fee29 last week
- History
- 1 contributor
-129 lines (109 sloc)  4.21 KB
- 
-
 <style>
 body{
     background-color: #fcee0a;
@@ -158,18 +127,3 @@ if (!empty($messages)) {
         </form>
     </div>
 </body>
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-di-liks.github.io/backend/4 at main · Di-Liks/di-liks.github.io
