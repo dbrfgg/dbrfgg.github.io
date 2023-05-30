@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
   
   $user = 'u52940';
   $pass = '1327243';
-  $db = new PDO('mysql:host=localhost;dbname=u52927', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+  $db = new PDO('mysql:host=localhost;dbname=u52940', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
   try{
       $id=$_GET['edit_id'];
       $get=$db->prepare("SELECT * FROM form WHERE id=?");
@@ -205,7 +205,7 @@ else {
     
     $user = 'u52940';
     $pass = '1327243';
-    $db = new PDO('mysql:host=localhost;dbname=u52927', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+    $db = new PDO('mysql:host=localhost;dbname=u52940', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     if(!$errors){
       $upd=$db->prepare("UPDATE form SET name=:name, email=:email, year=:byear, pol=:pol, limbs=:limbs, bio=:bio WHERE id=:id");
       $cols=array(
