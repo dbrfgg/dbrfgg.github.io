@@ -78,16 +78,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
   }
 	
 	$values = array();
-  $values['name'] = empty($_COOKIE['name_value']) ? '' : htmlspecialchars(strip_tags($_COOKIE['name_value']));
-  $values['email'] = empty($_COOKIE['email_value']) ? '' : htmlspecialchars(strip_tags($_COOKIE['email_value']));
-  $values['year'] = empty($_COOKIE['year_value']) ? '' : htmlspecialchars(strip_tags($_COOKIE['year_value']));
-  $values['radio-1'] = empty($_COOKIE['pol_value']) ? '' : htmlspecialchars(strip_tags($_COOKIE['pol_value']));
-  $values['radio-2'] = empty($_COOKIE['limb_value']) ? '' : htmlspecialchars(strip_tags($_COOKIE['limb_value']));
-  $values['inv'] = empty($_COOKIE['inv_value']) ? 0 : htmlspecialchars(strip_tags($_COOKIE['inv_value']));
-  $values['walk'] = empty($_COOKIE['walk_value']) ? 0 : htmlspecialchars(strip_tags($_COOKIE['walk_value']));
-  $values['fly'] = empty($_COOKIE['fly_value']) ? 0 : htmlspecialchars(strip_tags($_COOKIE['fly_value']));
-  $values['bio'] = empty($_COOKIE['bio_value']) ? '' : htmlspecialchars(strip_tags($_COOKIE['bio_value']));
-  $values['check-1'] = empty($_COOKIE['check_value']) ? FALSE : htmlspecialchars(strip_tags($_COOKIE['check_value']));
+  $values['name'] = empty($_COOKIE['name_value']) ? '' : strip_tags($_COOKIE['name_value']);
+  $values['email'] = empty($_COOKIE['email_value']) ? '' : strip_tags($_COOKIE['email_value']);
+  $values['year'] = empty($_COOKIE['year_value']) ? 0 : $_COOKIE['year_value'];
+  $values['radio-1'] = empty($_COOKIE['pol_value']) ? '' : $_COOKIE['pol_value'];
+  $values['radio-2'] = empty($_COOKIE['limb_value']) ? '' : $_COOKIE['limb_value'];
+  $values['inv'] = empty($_COOKIE['inv_value']) ? 0 : $_COOKIE['inv_value'];
+  $values['walk'] = empty($_COOKIE['walk_value']) ? 0 : $_COOKIE['walk_value'];
+  $values['fly'] = empty($_COOKIE['fly_value']) ? 0 : $_COOKIE['fly_value'];
+  $values['bio'] = empty($_COOKIE['bio_value']) ? '' : strip_tags($_COOKIE['bio_value']);
+  $values['check-1'] = empty($_COOKIE['check_value']) ? FALSE : $_COOKIE['check_value'];
 
   // Если нет предыдущих ошибок ввода, есть кука сессии, начали сессию и
   // ранее в сессию записан факт успешного логина.
